@@ -30,7 +30,9 @@ class Action extends React.Component {
     render() {
         return (
             <div>
-                <button onClick={this.handlePick}>What should I do?</button>
+                <button className='big-button' onClick={this.handlePick}>
+                    What should I do?
+                </button>
                 <OptionsModal
                     selectedOption={this.state.selectedOption}
                     closeModal={this.closeModal}

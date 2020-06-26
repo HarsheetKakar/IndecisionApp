@@ -1,0 +1,10 @@
+.big-button {
+    background-color: $purple;
+    width: 100%;
+    border: 0.6rem solid darken($purple, 10%);
+    color: white;
+    padding: 2.4rem;
+    font-weight: bold;
+    font-size: $l-size;
+    margin-bottom: $xl-size;
+}
