@@ -3,6 +3,9 @@ import React from "react";
 const Options = (props) => {
     return (
         <div>
+            <button onClick={props.removeAll} className='button button--link'>
+                Remove All
+            </button>
             <ol>
                 {props.options.map((option, key) => {
                     return (
@@ -14,7 +17,6 @@ const Options = (props) => {
                     );
                 })}
             </ol>
-            <button onClick={props.removeAll}>Remove All</button>
         </div>
     );
 };
@@ -28,7 +30,7 @@ const Option = (props) => {
                     onClick={() => {
                         props.handleDeleteOption(props.option);
                     }}
-                >
+                    className='button button--link'>
                     Remove
                 </button>
             </li>

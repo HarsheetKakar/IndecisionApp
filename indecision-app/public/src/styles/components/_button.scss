@@ -8,3 +8,17 @@
     font-size: $l-size;
     margin-bottom: $xl-size;
 }
+
+.button {
+    padding: $s-size;
+    color: white;
+    background-color: $purple;
+    border: none;
+    font-weight: 500;
+}
+
+.button--link {
+    color: $off-white;
+    padding: 0;
+    background: none;
+}

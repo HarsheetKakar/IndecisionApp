@@ -4,8 +4,10 @@ const AddOption = (props) => {
     return (
         <div>
             <form onSubmit={props.handleOnSubmit}>
-                <input type="text" name="task" id="task" />
-                <button type="submit">Add Option</button>
+                <input type='text' name='task' id='task' />
+                <button type='submit' className='button'>
+                    Add Option
+                </button>
             </form>
         </div>
     );
