@@ -3,9 +3,14 @@ import React from "react";
 const Options = (props) => {
     return (
         <div>
-            <button onClick={props.removeAll} className='button button--link'>
-                Remove All
-            </button>
+            <div className='widget-header'>
+                <h3 className='widget__title'>Your Options</h3>
+                <button
+                    onClick={props.removeAll}
+                    className='button button--link'>
+                    Remove All
+                </button>
+            </div>
             <ol>
                 {props.options.map((option, key) => {
                     return (
@@ -24,8 +29,8 @@ const Options = (props) => {
 const Option = (props) => {
     return (
         <div>
-            <li>
-                {props.option}
+            <li className='options'>
+                <span className='options__option'>{props.option}</span>
                 <button
                     onClick={() => {
                         props.handleDeleteOption(props.option);

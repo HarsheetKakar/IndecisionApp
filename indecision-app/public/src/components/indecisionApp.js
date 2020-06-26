@@ -86,12 +86,14 @@ class IndecisionApp extends React.Component {
                     ) : (
                         ""
                     )}
-                    <Options
-                        options={this.state.options}
-                        removeAll={this.removeAll}
-                        handleDeleteOption={this.handleDeleteOption}
-                    />
-                    <AddOption handleOnSubmit={this.handleOnSubmit} />
+                    <div className='widget'>
+                        <Options
+                            options={this.state.options}
+                            removeAll={this.removeAll}
+                            handleDeleteOption={this.handleDeleteOption}
+                        />
+                        <AddOption handleOnSubmit={this.handleOnSubmit} />
+                    </div>
                 </div>
             </div>
         );

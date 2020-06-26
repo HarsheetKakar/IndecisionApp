@@ -1,0 +1,16 @@
+.widget {
+    width: auto;
+    background-color: $light-blue;
+}
+
+.widget-header {
+    background-color: $off-black;
+    color: $off-white;
+    display: flex;
+    justify-content: space-between;
+    padding: $l-size;
+}
+
+.widget__title {
+    margin: 0;
+}
